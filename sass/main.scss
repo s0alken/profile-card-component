@@ -1,0 +1,141 @@
+//Colors
+
+//Primary
+
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+
+//Neutral
+
+$dark-gray: hsl(0, 0%, 59%);
+
+$white: hsl(0, 0%, 100%);
+
+$light-gray: hsl(225, 10%, 92%);
+
+//Fonts
+$font-primary: 'Kumbh Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $dark-cyan;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 97.8rem 97.6rem;
+    background-position: right 51.9vw bottom 35vh, left 48.1vw top 52.1vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-primary {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    color: $very-dark-desaturated-blue;
+}
+
+.profile {
+    background: $white;
+    box-shadow: 0px 5rem 10rem -2rem rgba(8, 70, 94, 0.504835);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin: 2.4rem;
+
+    &__background {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+        border: .5rem solid $white;
+        transform: translateY(-50%);
+        margin-bottom: -5.3rem;
+    }
+
+    &__name {
+
+        margin-top: 2.1rem;
+        margin-bottom: .8rem;
+
+        span {
+            font-weight: 400;
+            color: $dark-grayish-blue;
+            margin-left: .4rem;
+        }
+    }
+
+    &__city {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+
+        color: $dark-grayish-blue;
+
+        margin-bottom: 2.5rem;
+    }
+
+    &__stats {
+        align-self: stretch;
+
+        display: flex;
+        justify-content: space-between;
+
+        padding: 2.5rem 5.4rem 2.4rem 4.7rem;
+
+        border-top: 1px solid $light-gray;
+        list-style: none;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                letter-spacing: .15rem;
+
+                margin-top: .5rem;
+
+                color: $dark-grayish-blue;
+            }
+        }
+    }
+}
