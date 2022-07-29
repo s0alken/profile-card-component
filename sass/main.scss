@@ -83,7 +83,7 @@ body {
 
     &__avatar {
         border-radius: 50%;
-        border: .5rem solid $white;
+        outline: .5rem solid hsl(0deg, 0%, 100%);
         transform: translateY(-50%);
         margin-bottom: -5.3rem;
         background-color: $white;
@@ -91,7 +91,7 @@ body {
 
     &__name {
 
-        margin-top: 2.1rem;
+        margin-top: 3rem;
         margin-bottom: .8rem;
 
         span {

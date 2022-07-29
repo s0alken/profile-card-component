@@ -57,13 +57,13 @@ body {
 }
 .profile__avatar {
   border-radius: 50%;
-  border: 0.5rem solid hsl(0deg, 0%, 100%);
+  outline: 0.5rem solid hsl(0deg, 0%, 100%);
   transform: translateY(-50%);
   margin-bottom: -5.3rem;
   background-color: hsl(0deg, 0%, 100%);
 }
 .profile__name {
-  margin-top: 2.1rem;
+  margin-top: 3rem;
   margin-bottom: 0.8rem;
 }
 .profile__name span {
