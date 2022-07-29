@@ -60,6 +60,7 @@ body {
   border: 0.5rem solid hsl(0deg, 0%, 100%);
   transform: translateY(-50%);
   margin-bottom: -5.3rem;
+  background-color: hsl(0deg, 0%, 100%);
 }
 .profile__name {
   margin-top: 2.1rem;
